@@ -1,4 +1,5 @@
 from person.Person import Person
+from student.Student import Student
 
 def testPerson():
 
@@ -21,5 +22,13 @@ def testPerson():
     assert dictMarta['name'] == 'Marta'
     assert dictMarta['age'] == 36
 
+
+
+def testStudent():
+
+    studentInstance = Student('Noelia', 24)
+    assert studentInstance.greet() == 'Hello my name is Noelia'
+
 if __name__ == '__main__':
     testPerson()
+    testStudent()

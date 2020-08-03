@@ -1,5 +1,5 @@
 from person.Person import Person
-#from student.Student import Student
+from student.Student import Student
 #from teacher.Teacher import Teacher
 
 def main():
@@ -28,10 +28,10 @@ def main():
     print(p1.__str__())
 
 
-    # # Creamos una instancia de Student, heredera de Person
-    # s1 = Student('Noelia', 24)
-    # # Comprobamos que podemos usar los métodos de Person
-    # s1.greet()
+    # Creamos una instancia de Student, heredera de Person
+    s1 = Student('Noelia', 24)
+    # Comprobamos que podemos usar los métodos de Person
+    s1.greet()
 
 
     # # Creamos una instancia de Teacher, heredera de Person 
