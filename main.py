@@ -1,6 +1,6 @@
 from person.Person import Person
 from student.Student import Student
-#from teacher.Teacher import Teacher
+from teacher.Teacher import Teacher
 
 def main():
 
@@ -34,14 +34,14 @@ def main():
     s1.greet()
 
 
-    # # Creamos una instancia de Teacher, heredera de Person 
-    # t1 = Teacher('Roger', 42, 0)
+    # Creamos una instancia de Teacher, heredera de Person 
+    t1 = Teacher('Roger', 42, 0)
     
-    # # Comprobamos que podemo usar los métodos de Person...
-    # print("The teacher's name is: " + t1.getName())
+    # Comprobamos que podemo usar los métodos de Person...
+    print("The teacher's name is: " + t1.getName())
 
-    # # y que también se pueden usar métodos propios de Teacher
-    # print('And his patience is: ' + str(t1.get_patience()))
+    # y que también se pueden usar métodos propios de Teacher
+    print('And his patience is: ' + str(t1.getPatience()))
 
 
 if __name__ == '__main__':
