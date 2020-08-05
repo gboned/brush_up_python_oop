@@ -23,6 +23,9 @@ def testPerson():
     assert dictMarta['name'] == 'Marta'
     assert dictMarta['age'] == 36
 
+    dictMartaStr = johnInstance.__str__()
+    assert dictMartaStr == "{'name': 'Marta', 'age': 36}"
+
 
 
 def testStudent():
@@ -44,3 +47,4 @@ def testTeacher():
 if __name__ == '__main__':
     testPerson()
     testStudent()
+    testTeacher()
