@@ -1,5 +1,6 @@
 from person.Person import Person
 from student.Student import Student
+from teacher.Teacher import Teacher
 
 def testPerson():
 
@@ -28,6 +29,17 @@ def testStudent():
 
     studentInstance = Student('Noelia', 24)
     assert studentInstance.greet() == 'Hello my name is Noelia'
+
+
+
+def testTeacher():
+
+    teacherInstance = Teacher('Roger', 42, 0)
+    assert teacherInstance.getName() == 'Roger'
+
+    assert teacherInstance.getAge() == 42
+    
+    assert teacherInstance.getPatience() == 0
 
 if __name__ == '__main__':
     testPerson()
