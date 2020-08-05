@@ -33,3 +33,7 @@ class Person:
         personDict['name'] = self.name
         personDict['age'] = self.age
         return personDict
+
+    def __str__(self):
+        personDictStr = "{'name': '" + self.name + "', 'age': " + str(self.age) + "}"
+        return personDictStr
